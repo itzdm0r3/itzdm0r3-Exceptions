@@ -20,7 +20,8 @@ public class Lab {
      *
      * Check out this guide on throwing exceptions: https://rollbar.com/guides/java/how-to-throw-exceptions-in-java/#
      */
-    public void mustThrow() {
-
+    public void mustThrow() throws ArrayIndexOutOfBoundsException {
+        int[] arr = {10, 20, 30, 40};
+        System.out.println(arr[4]);
     }
 }
